@@ -47,7 +47,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-gradient-to-r from-primary-dark to-primary-light shadow-lg">
+    <header className="bg-linear-to-r from-primary-[#3730a3] to-primary-[#4f46e5] shadow-lg">
       <div className="container mx-auto px-4 py-5">
         {/* Top Bar */}
         <div className="flex justify-between items-center">
@@ -63,13 +63,13 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden space-x-6 lg:flex justify-between items-center">
             <Link to="/">
-              <p className="text-teal-400 text-[18px] hover:text-secondary-light transition duration-300 font-medium mr-[10px]">
+              <p className="text-teal-400 text-[18px] hover:text-[#f97316] transition duration-300 font-medium mr-[10px]">
                 Home
               </p>
             </Link>
 
             <Link to="/about">
-              <p className="text-teal-400 text-[18px] hover:text-secondary-light transition duration-300 font-medium mr-[10px]">
+              <p className="text-teal-400 text-[18px] hover:text-[#f97316] transition duration-300 font-medium mr-[10px]">
                 About Us
               </p>
             </Link>
@@ -124,7 +124,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 space-y-3 pb-3 animate-fadeIn">
+          <nav className="md:hidden mt-4 space-y-3 pb-3 animate-[fadeIn 0.3s ease-in-out]">
             <Link to="/">
               <p className="text-teal-400 text-[18px] hover:text-secondary-light transition duration-300 font-medium mr-[10px]">
                 Home

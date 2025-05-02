@@ -3,7 +3,7 @@ import { FaArrowRight, FaCheck, FaPercentage, FaHandHoldingUsd, FaShieldAlt, FaC
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
+    <section className="relative bg-linear-to-br from-gray-900 to-gray-800 overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-40 h-40 bg-teal-500 rounded-full filter blur-3xl opacity-30"></div>
@@ -17,7 +17,7 @@ export default function Hero() {
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 text-sm font-medium mb-4">
               <FaChartLine className="mr-2" /> TRADER APPROVED
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-black">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white dark:text-white">
               <span className="bg-clip-text text-transparent bg-linear-to-r from-teal-400 to-indigo-400">Premium Access</span> to Prop Trading Accounts
             </h1>
             <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-lg">
@@ -30,12 +30,6 @@ export default function Hero() {
                 className="bg-linear-to-r from-teal-500 to-indigo-600 hover:from-teal-600 hover:to-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-teal-500/20"
               >
                 Contact Us <FaArrowRight className="ml-2" />
-              </a>
-              <a 
-                href="#how-it-works" 
-                className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 border border-gray-700 flex items-center justify-center hover:border-gray-600"
-              >
-                How It Works
               </a>
             </div>
             

@@ -13,6 +13,20 @@ import FundedPro from "../assets/funderpro.png"
 const PropFirmsBrokersPage = () => {
   const propFirms = [
     {
+      id: 2,
+      name: 'FundedNext',
+      logo: FundedNext,
+      description: 'Empowering Promising Trader Worldwide',
+      rating: 4.6,
+      discount: 'ERAGON',
+      discountPercentage: 110,
+      minDeposit: '$59',
+      profitSplit: '90%',
+      link: 'https://fundednext.com/?fpr=aniekan61',
+      featured: false,
+      address: '/fundednext'
+    },
+    {
       id: 1,
       name: 'FTMO',
       logo: FTMO,
@@ -23,21 +37,8 @@ const PropFirmsBrokersPage = () => {
       minDeposit: '$89',
       profitSplit: 'Up to 90%',
       link: 'https://ftmo.com/?ref=ERAGONJR',
+      address: "https://ftmo.com/?ref=ERAGONJR",
       featured: true,
-    },
-    {
-      id: 2,
-      name: 'FundedNext',
-      logo: FundedNext,
-      description: 'Empowering Promising Trader Worldwide',
-      rating: 4.6,
-      discount: 'ERAGON',
-      discountPercentage: 20,
-      minDeposit: '$59',
-      profitSplit: '15%',
-      link: 'https://fundednext.com/?fpr=aniekan61',
-      featured: false,
-      address: '/fundednext'
     },
     {
       id: 3,
@@ -50,6 +51,7 @@ const PropFirmsBrokersPage = () => {
       minAccount: '$13',
       profitSplit: 'Up to 80%',
       link: 'https://maventrading.com/?ref=eragonjnr8%40gmail.com',
+      address: 'https://maventrading.com/?ref=eragonjnr8%40gmail.com',
       featured: true,
     },
     {
