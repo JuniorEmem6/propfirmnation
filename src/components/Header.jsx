@@ -47,7 +47,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-linear-to-r from-primary-[#3730a3] to-primary-[#4f46e5] shadow-lg">
+    <header className="bg-linear-to-r from-[#3730a3] to-[#4f46e5] shadow-lg">
       <div className="container mx-auto px-4 py-5">
         {/* Top Bar */}
         <div className="flex justify-between items-center">
