@@ -156,11 +156,6 @@ const PropFirmsBrokersPage = () => {
                 key={firm.id} 
                 className={`bg-gray-800 rounded-xl overflow-hidden border ${firm.featured ? 'border-teal-500/50' : 'border-gray-700'} hover:shadow-lg hover:shadow-teal-500/10 transition-all duration-300`}
               >
-                {firm.featured && (
-                  <div className="bg-gradient-to-r from-teal-600 to-teal-800 text-white text-xs font-bold px-3 py-1 absolute top-3 left-3 rounded-full">
-                    Featured
-                  </div>
-                )}
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <img src={firm.logo} alt={firm.name} className="h-10 object-contain" />
