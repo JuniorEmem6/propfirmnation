@@ -24,14 +24,14 @@ export default function Hero() {
               Unlock exclusive discounts, higher profit splits, and special bonuses through our verified partner network.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 mb-10">
+            {/* <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <a 
                 href="http://wa.me/2347039729635" 
                 className="bg-linear-to-r from-teal-500 to-indigo-600 hover:from-teal-600 hover:to-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-teal-500/20"
               >
                 Contact Us <FaArrowRight className="ml-2" />
               </a>
-            </div>
+            </div> */}
             
             <div className="flex flex-wrap gap-x-8 gap-y-4">
               <div className="flex items-center text-teal-400">
