@@ -19,7 +19,7 @@ const PropFirmsBrokersPage = () => {
       description: 'Empowering Promising Trader Worldwide',
       rating: 4.6,
       discount: 'ERAGON',
-      discountPercentage: 110,
+      discountPercentage: "110% Reward - 120% Refund",
       minDeposit: '$59',
       profitSplit: '90%',
       link: 'https://fundednext.com/?fpr=aniekan61',
@@ -158,7 +158,7 @@ const PropFirmsBrokersPage = () => {
               >
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-4">
-                    <img src={firm.logo} alt={firm.name} className="h-10 object-contain" />
+                    <a href={firm.link}><img src={firm.logo} alt={firm.name} className="h-10 object-contain" /></a>
                     <div className="flex items-center bg-gray-900 px-2 py-1 rounded">
                       <FaStar className="text-yellow-400 mr-1" />
                       <span className="font-medium">{firm.rating}</span>
@@ -179,7 +179,7 @@ const PropFirmsBrokersPage = () => {
                   </div>
                   
                   {firm.discount && (
-                    <div className="bg-gradient-to-r from-teal-500/10 to-teal-500/5 border border-teal-500/30 rounded-lg p-3 mb-5">
+                    <div className="bg-linear-to-r from-teal-500/10 to-teal-500/5 border border-teal-500/30 rounded-lg p-3 mb-5">
                       <div className="flex items-center">
                         <FaPercentage className="text-teal-400 mr-2" />
                         <div>
@@ -216,14 +216,9 @@ const PropFirmsBrokersPage = () => {
                 key={broker.id} 
                 className={`bg-gray-800 rounded-xl overflow-hidden border ${broker.featured ? 'border-indigo-500/50' : 'border-gray-700'} hover:shadow-lg hover:shadow-indigo-500/10 transition-all duration-300`}
               >
-                {broker.featured && (
-                  <div className="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white text-xs font-bold px-3 py-1 absolute top-3 left-3 rounded-full">
-                    Featured
-                  </div>
-                )}
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-4">
-                    <img src={broker.logo} alt={broker.name} className="h-10 object-contain" />
+                    <a href={broker.link}><img src={broker.logo} alt={broker.name} className="h-10 object-contain" /></a>
                     <div className="flex items-center bg-gray-900 px-2 py-1 rounded">
                       <FaStar className="text-yellow-400 mr-1" />
                       <span className="font-medium">{broker.rating}</span>

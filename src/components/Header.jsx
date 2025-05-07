@@ -22,28 +22,8 @@ export default function Header() {
   const navItems = [
     {
       name: "About Us",
-      // dropdown: [
-      //   { name: "FundedNext", href: "#evaluation" },
-      //   { name: "Instant Funding", href: "#instant" },
-      //   { name: "Maven", href: "#top-rated" },
-      // ],
+      
     },
-    // {
-    //   name: "Brokers",
-    //   dropdown: [
-    //     { name: "Exness", href: "#forex" },
-    //     { name: "Headway", href: "#stocks" },
-    //     { name: "Emex Capital", href: "#crypto" },
-    //   ],
-    // },
-    // {
-    //   name: "Resources",
-    //   dropdown: [
-    //     { name: "Trading Tools", href: "#tools" },
-    //     { name: "Educational Content", href: "#education" },
-    //     { name: "Community", href: "#community" },
-    //   ],
-    // },
   ];
 
   return (
@@ -126,13 +106,13 @@ export default function Header() {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 space-y-3 pb-3 animate-[fadeIn 0.3s ease-in-out]">
             <Link to="/">
-              <p className="text-teal-400 text-[18px] hover:text-secondary-light transition duration-300 font-medium mr-[10px]">
+              <p className="text-teal-400 text-[18px] hover:text-[#f97316] transition duration-300 font-medium mr-[10px]">
                 Home
               </p>
             </Link>
 
             <Link to="/about">
-              <p className="text-teal-400 text-[18px] hover:text-secondary-light transition duration-300 font-medium mr-[10px]">
+              <p className="text-teal-400 text-[18px] hover:text-[#f97316] transition duration-300 font-medium mr-[10px]">
                 About Us
               </p>
             </Link>
