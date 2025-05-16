@@ -270,9 +270,9 @@ const PropFirmsBrokersPage = () => {
           <p className="text-gray-400 max-w-2xl mx-auto mb-6">
             We partner with additional proprietary trading firms and brokers. Contact us for personalized recommendations based on your trading style.
           </p>
-          <button className="bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 inline-flex items-center">
+          <a href="http://wa.me/2347039729635" className="bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 inline-flex items-center">
             Contact Our Team <FaExternalLinkAlt className="ml-2 text-sm" />
-          </button>
+          </a>
         </div>
       </div>
     </div>
