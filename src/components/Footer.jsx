@@ -1,5 +1,6 @@
-import React from 'react';
-import { FaShieldAlt, FaLock, FaLink } from 'react-icons/fa';
+import React from "react";
+import { FaShieldAlt, FaLock, FaLink } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -38,13 +39,13 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-400 mb-6">
-              Your trusted source for exclusive prop firm discounts and broker deals. 
-              We help traders access more capital with better terms.
+              Your trusted source for exclusive prop firm discounts and broker
+              deals. We help traders access more capital with better terms.
             </p>
           </div>
 
-             {/* Newsletter */}
-             <div>
+          {/* Newsletter */}
+          <div>
             <h3 className="text-white font-bold text-lg mb-4 flex items-center">
               <span className="w-2 h-2 rounded-full bg-teal-500 mr-2"></span>
               Newsletter
@@ -53,9 +54,9 @@ const Footer = () => {
               Get the latest deals and trading tips straight to your inbox.
             </p>
             <div className="flex">
-              <input 
-                type="email" 
-                placeholder="Your email" 
+              <input
+                type="email"
+                placeholder="Your email"
                 className="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none focus:ring-1 focus:ring-teal-500 w-full"
               />
               <button className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-r-lg transition-colors">
@@ -71,16 +72,24 @@ const Footer = () => {
               Legal
             </h3>
             <ul className="space-y-3">
-              <li><a href="/privacy" className="text-gray-400 hover:text-indigo-400 transition-colors flex items-center">
-                <FaLock className="mr-2 text-xs" /> Privacy Policy
-              </a></li>
-              <li><a href="/term" className="text-gray-400 hover:text-indigo-400 transition-colors flex items-center">
-                <FaShieldAlt className="mr-2 text-xs" /> Terms of Service
-              </a></li>
-              <li><a href="affiliate" className="text-gray-400 hover:text-indigo-400 transition-colors">Affiliate Disclosure</a></li>
+              <Link to="/privacy">
+                <li className="text-gray-400 hover:text-indigo-400 transition-colors flex items-center">
+                  <FaLock className="mr-2 text-xs" /> Privacy Policy
+                </li>
+              </Link>
+
+              <Link to="/term">
+                <li className="text-gray-400 hover:text-indigo-400 transition-colors flex items-center">
+                  <FaShieldAlt className="mr-2 text-xs" /> Terms of Service
+                </li>
+              </Link>
+              <Link>
+                <li className="text-gray-400 hover:text-indigo-400 transition-colors">
+                  Affiliate Disclosure
+                </li>
+              </Link>
             </ul>
           </div>
-
         </div>
       </div>
 
@@ -91,7 +100,6 @@ const Footer = () => {
             <div className="mb-2 md:mb-0">
               © {new Date().getFullYear()} PropFirmNation. All rights reserved.
             </div>
-          
           </div>
         </div>
       </div>
