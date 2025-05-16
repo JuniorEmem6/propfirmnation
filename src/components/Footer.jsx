@@ -83,7 +83,7 @@ const Footer = () => {
                   <FaShieldAlt className="mr-2 text-xs" /> Terms of Service
                 </li>
               </Link>
-              <Link>
+              <Link to="/affiliate">
                 <li className="text-gray-400 hover:text-indigo-400 transition-colors">
                   Affiliate Disclosure
                 </li>
