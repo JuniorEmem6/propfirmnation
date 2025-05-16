@@ -43,26 +43,8 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Legal */}
-          <div>
-            <h3 className="text-white font-bold text-lg mb-4 flex items-center">
-              <span className="w-2 h-2 rounded-full bg-indigo-500 mr-2"></span>
-              Legal
-            </h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors flex items-center">
-                <FaLock className="mr-2 text-xs" /> Privacy Policy
-              </a></li>
-              <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors flex items-center">
-                <FaShieldAlt className="mr-2 text-xs" /> Terms of Service
-              </a></li>
-              <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors">Disclaimer</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors">Affiliate Disclosure</a></li>
-            </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div>
+             {/* Newsletter */}
+             <div>
             <h3 className="text-white font-bold text-lg mb-4 flex items-center">
               <span className="w-2 h-2 rounded-full bg-teal-500 mr-2"></span>
               Newsletter
@@ -81,21 +63,35 @@ const Footer = () => {
               </button>
             </div>
           </div>
+
+          {/* Legal */}
+          <div>
+            <h3 className="text-white font-bold text-lg mb-4 flex items-center">
+              <span className="w-2 h-2 rounded-full bg-indigo-500 mr-2"></span>
+              Legal
+            </h3>
+            <ul className="space-y-3">
+              <li><a href="/privacy" className="text-gray-400 hover:text-indigo-400 transition-colors flex items-center">
+                <FaLock className="mr-2 text-xs" /> Privacy Policy
+              </a></li>
+              <li><a href="/term" className="text-gray-400 hover:text-indigo-400 transition-colors flex items-center">
+                <FaShieldAlt className="mr-2 text-xs" /> Terms of Service
+              </a></li>
+              <li><a href="affiliate" className="text-gray-400 hover:text-indigo-400 transition-colors">Affiliate Disclosure</a></li>
+            </ul>
+          </div>
+
         </div>
       </div>
 
       {/* Copyright */}
       <div className="bg-gray-900/50 py-4">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+          <div className="flex flex-col md:flex-row justify-center items-center text-sm text-gray-500">
             <div className="mb-2 md:mb-0">
               © {new Date().getFullYear()} PropFirmNation. All rights reserved.
             </div>
-            <div className="flex space-x-4">
-              <a href="#" className="hover:text-teal-400 transition-colors">Sitemap</a>
-              <a href="#" className="hover:text-teal-400 transition-colors">Contact</a>
-              <a href="#" className="hover:text-teal-400 transition-colors">FAQ</a>
-            </div>
+          
           </div>
         </div>
       </div>

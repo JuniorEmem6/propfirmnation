@@ -19,7 +19,7 @@ const PropFirmsBrokersPage = () => {
       description: 'Empowering Promising Trader Worldwide',
       rating: 4.6,
       discount: 'ERAGON',
-      discountPercentage: "110% Reward - 120% Refund",
+      discountPercentage: "110% Reward",
       minDeposit: '$59',
       profitSplit: '90%',
       link: 'https://fundednext.com/?fpr=aniekan61',
