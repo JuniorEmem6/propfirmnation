@@ -1,8 +1,30 @@
 import React from "react";
 import { FaShieldAlt, FaLock, FaLink } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import Toast from "./Toast";
 
 const Footer = () => {
+  const [email, setEmail] = React.useState("");
+  const [sent, setSent] = React.useState(false)
+
+  const subscriber = async () => {
+    const site = "propfirmnation"
+    try {
+      const response = await axios.post(
+        `https://propbak-production.up.railway.app/subscribe?email=${email}&site=${site}`
+      );
+
+      console.log(response)
+
+      if(response.statusText === ""){
+        setSent(true)
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <footer className="bg-linear-to-r from-gray-900 to-gray-800 border-t border-gray-800">
       {/* Trust Badges */}
@@ -43,7 +65,7 @@ const Footer = () => {
               deals. We help traders access more capital with better terms.
             </p>
           </div>
-
+          {sent ? (<Toast message="Email Submitted" type="success"/>): ""}
           {/* Newsletter */}
           <div>
             <h3 className="text-white font-bold text-lg mb-4 flex items-center">
@@ -57,13 +79,19 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email"
+                onChange={(e) => setEmail(e.target.value)}
                 className="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none focus:ring-1 focus:ring-teal-500 w-full"
               />
-              <button className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-r-lg transition-colors">
+              <button
+                onClick={subscriber}
+                className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-r-lg transition-colors"
+              >
                 Join
               </button>
             </div>
           </div>
+
+         
 
           {/* Legal */}
           <div>
