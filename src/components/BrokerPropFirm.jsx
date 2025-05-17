@@ -226,7 +226,7 @@ const PropFirmsBrokersPage = () => {
                       href={firm.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full flex items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-300"
+                      className="w-full flex items-center justify-center bg-linear-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-300"
                     >
                       Visit Website{" "}
                       <FaExternalLinkAlt className="ml-2 text-sm" />
@@ -235,7 +235,7 @@ const PropFirmsBrokersPage = () => {
                    {firm.address ? (
                      <Link to={firm.address}>
                      <p
-                       className="w-full flex mt-[20px] items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-300"
+                       className="w-full flex mt-[20px] items-center justify-center bg-linear-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-300"
                      >
                        See Coupon{" "}
                        <FaExternalLinkAlt className="ml-2 text-sm" />
@@ -295,7 +295,7 @@ const PropFirmsBrokersPage = () => {
                   </div>
 
                   {broker.bonus && (
-                    <div className="bg-gradient-to-r from-indigo-500/10 to-indigo-500/5 border border-indigo-500/30 rounded-lg p-3 mb-5">
+                    <div className="bg-linear-to-r from-indigo-500/10 to-indigo-500/5 border border-indigo-500/30 rounded-lg p-3 mb-5">
                       <div className="flex items-center">
                         <FaPercentage className="text-indigo-400 mr-2" />
                         <div>
@@ -312,7 +312,7 @@ const PropFirmsBrokersPage = () => {
                     href={broker.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full flex items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-300"
+                    className="w-full flex items-center justify-center bg-linear-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-300"
                   >
                     Visit Website <FaExternalLinkAlt className="ml-2 text-sm" />
                   </a>
@@ -334,7 +334,7 @@ const PropFirmsBrokersPage = () => {
           </p>
           <a
             href="http://wa.me/2347039729635"
-            className="bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 inline-flex items-center"
+            className="bg-linear-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 inline-flex items-center"
           >
             Contact Our Team <FaExternalLinkAlt className="ml-2 text-sm" />
           </a>
